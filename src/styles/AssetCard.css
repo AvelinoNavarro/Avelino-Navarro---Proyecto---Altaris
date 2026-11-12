@@ -1,21 +1,31 @@
+/* Foto del producto */
 .imagen-activo {
   width: 100%;
-  height: 8.75rem;
-  object-fit: contain;
+  height: 9rem;
+  object-fit: contain; /* la imagen se ve entera, sin recortarse */
   background: white;
   border-radius: 0.5rem;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
 }
 
-.precio { font-size: 1.125rem; font-weight: bold; color: var(--acento); }
+.precio {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--acento);
+}
 
-.tarjeta-valor { border-color: var(--acento); border-width: 0.125rem; }
+/* Tarjeta de un activo de más de 50 $: borde dorado más grueso */
+.tarjeta-valor {
+  border-color: var(--acento);
+  border-width: 2px;
+}
 
+/* Etiqueta "Activo de Alto Valor" */
 .etiqueta-valor {
   display: inline-block;
   margin-top: 0.5rem;
-  padding: 0.25rem 0.625rem;
-  border-radius: 62.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
   background: var(--acento);
   color: var(--texto-oscuro);
   font-size: 0.75rem;

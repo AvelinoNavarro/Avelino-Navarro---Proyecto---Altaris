@@ -1,4 +1,4 @@
-import './styles/NavBtn.css'
+import '../styles/NavBtn.css'
 
 interface NavBtnProps {
   titulo: string

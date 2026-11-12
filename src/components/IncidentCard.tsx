@@ -1,11 +1,11 @@
-import './styles/IncidentCard.css'
+import '../styles/IncidentCard.css'
 interface IncidentCardProps {
   titulo: string
   departamento: number
   completada: boolean
 }
 
-function IncidentCard({ titulo, departamento, completada }: IncidentCardProps) {
+function IncidentCard({ titulo,  completada }: IncidentCardProps) {
   return (
     <article className={completada ? 'tarjeta incidencia-resuelta' : 'tarjeta incidencia-pendiente'}>
       <div className="incidencia-cabecera">

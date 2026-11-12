@@ -1,4 +1,4 @@
-import './styles/EmployeeCard.css'
+import '../styles/Canvas.css'
 interface EmployeeCardProps {
   nombre: string
   correo: string

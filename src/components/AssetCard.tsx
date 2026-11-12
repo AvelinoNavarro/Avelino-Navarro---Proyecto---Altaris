@@ -1,4 +1,4 @@
-import './styles/AssetCard.css'
+import '../styles/AssetCard.css'
 interface AssetCardProps {
   nombre: string
   precio: number
@@ -6,7 +6,7 @@ interface AssetCardProps {
   imagen: string
 }
 
-function AssetCard({ nombre, precio, categoria, imagen }: AssetCardProps) {
+function AssetCard({ nombre, precio, imagen }: AssetCardProps) {
   return (
     <article className={precio > 50 ? 'tarjeta tarjeta-valor' : 'tarjeta'}>
       <img src={imagen} alt={nombre} className="imagen-activo" />

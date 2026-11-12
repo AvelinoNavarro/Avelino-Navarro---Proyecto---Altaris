@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import logo from './assets/logo.png'
-import './styles/Header.css'
+import logo from '../assets/logo.png'
+import '../styles/Header.css'
 
 function Header() {
   const [hora, setHora] = useState<string>(() => new Date().toLocaleTimeString())

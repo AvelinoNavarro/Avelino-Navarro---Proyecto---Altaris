@@ -1,5 +1,5 @@
 import NavBtn from './NavBtn'
-import './styles/Sidebar.css'
+import '../styles/Sidebar.css'
 
 interface SidebarProps {
   seccion: string

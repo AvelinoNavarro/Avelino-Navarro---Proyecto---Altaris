@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import IncidentCard from '../components/IncidentCard'
 
-// Solo los campos de la API que vamos a usar
 interface Incidencia {
   id: number
   userId: number

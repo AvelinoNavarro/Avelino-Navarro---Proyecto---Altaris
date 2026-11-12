@@ -6,9 +6,10 @@ export default defineConfig({
   main: {},
   preload: {},
   renderer: {
-    resolve: {
-      alias: {
-        '@renderer': resolve('src/renderer/src')
+    root: '.',
+    build: {
+      rollupOptions: {
+        input: resolve('index.html')
       }
     },
     plugins: [react()]

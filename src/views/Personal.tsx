@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import EmployeeCard from '../components/EmployeeCard'
-import './styles/Personal.css'
-// Solo definimos los campos de la API que vamos a usar
+import '../styles/Personal.css'
 interface Empleado {
   id: number
   name: string
@@ -24,7 +23,6 @@ function Personal() {
     try {
       const respuesta = await fetch('https://jsonplaceholder.typicode.com/users')
 
-      // fetch no entra al catch con un 404 o 500, hay que validarlo a mano
       if (!respuesta.ok) {
         throw new Error(`Error en el servidor: ${respuesta.status}`)
       }
@@ -40,7 +38,6 @@ function Personal() {
     }
   }
 
-  // Filtro en tiempo real por nombre
   const empleadosFiltrados: Empleado[] = empleados.filter((emp) =>
     emp.name.toLowerCase().includes(busqueda.toLowerCase())
   )

@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar'
 import Personal from './views/Personal'
 import Inventario from './views/Inventario'
 import Incidencias from './views/Incidencias'
-import './styles/app.css'
+
 
 function App() {
   const [seccion, setSeccion] = useState<string>('Personal')

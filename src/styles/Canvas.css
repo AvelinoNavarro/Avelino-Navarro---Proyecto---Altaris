@@ -1,0 +1,93 @@
+/* 
+   Se definen una vez aquí y se usan en todos los CSS con var(--nombre) */
+:root {
+  --fondo: #2b1d16;
+  --panel: #3a2a20;
+  --borde: #573a2e;
+  --acento: #c8a06c;
+  --acento2: #e6c590;
+  --texto: #f5ede3;
+  --texto-oscuro: #2b1d16;
+}
+
+
+* {
+  box-sizing: border-box; /* el padding no agranda las cajas */
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  font-family: system-ui, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+}
+
+/* Contenedor general: cabecera arriba y cuerpo debajo */
+#app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/*COMPARTIDO POR LAS TRES VISTAS */
+
+/* Fila con el buscador y el botón */
+.barra-superior {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-cargar {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--acento);
+  color: var(--texto-oscuro);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-cargar:hover {
+  opacity: 0.8;
+}
+
+/* Mensajes de Cargando y de error */
+.mensaje {
+  color: var(--acento2);
+}
+
+.mensaje.error {
+  color: #e8837a;
+}
+
+/* Rejilla donde se colocan las tarjetas */
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+
+/* TARJETA BASE*/
+.tarjeta {
+  padding: 1rem;
+  background: var(--panel);
+  border: 1px solid var(--borde);
+  border-radius: 0.5rem;
+}
+
+.tarjeta:hover {
+  border-color: var(--acento);
+}
+
+.tarjeta h3 {
+  margin: 0 0 0.5rem;
+  color: var(--acento2);
+}
+
+.tarjeta p {
+  margin: 0.25rem 0;
+}

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import AssetCard from '../components/AssetCard'
 
-// Solo los campos de la API que vamos a usar
 interface Activo {
   id: number
   title: string
