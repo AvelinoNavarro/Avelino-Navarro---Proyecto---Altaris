@@ -1,0 +1,39 @@
+/* ===== COMPARTIDO POR LAS TRES VISTAS ===== */
+.barra-superior {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.btn-cargar {
+  padding: 0.625rem 1.125rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--acento);
+  color: var(--texto-oscuro);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-cargar:hover { filter: brightness(1.1); }
+
+.mensaje { color: var(--acento2); }
+.mensaje.error { color: #e8837a; }
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13.75rem, 1fr));
+  gap: 1rem;
+}
+
+/* ===== SOLO PERSONAL ===== */
+.buscador {
+  flex: 1;
+  padding: 0.625rem 0.875rem;
+  border: 0.0625rem solid var(--borde);
+  border-radius: 0.5rem;
+  background: var(--panel);
+  color: var(--texto);
+}
+
+.buscador:focus { outline: none; border-color: var(--acento); }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import EmployeeCard from '../components/EmployeeCard'
-
+import './styles/Personal.css'
 // Solo definimos los campos de la API que vamos a usar
 interface Empleado {
   id: number

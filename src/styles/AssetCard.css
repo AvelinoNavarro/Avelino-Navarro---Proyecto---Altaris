@@ -1,0 +1,23 @@
+.imagen-activo {
+  width: 100%;
+  height: 8.75rem;
+  object-fit: contain;
+  background: white;
+  border-radius: 0.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.precio { font-size: 1.125rem; font-weight: bold; color: var(--acento); }
+
+.tarjeta-valor { border-color: var(--acento); border-width: 0.125rem; }
+
+.etiqueta-valor {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 62.5rem;
+  background: var(--acento);
+  color: var(--texto-oscuro);
+  font-size: 0.75rem;
+  font-weight: bold;
+}

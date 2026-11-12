@@ -1,0 +1,19 @@
+.nav-btn {
+  padding: 0.75rem;
+  border: 0.0625rem solid var(--borde);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--texto);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover { border-color: var(--acento); }
+
+.nav-btn.activo {
+  background: var(--acento);
+  border-color: var(--acento);
+  color: var(--texto-oscuro);
+  font-weight: bold;
+}

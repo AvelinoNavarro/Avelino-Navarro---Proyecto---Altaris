@@ -1,0 +1,21 @@
+.incidencia-cabecera {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.icono-estado { font-size: 1.25rem; }
+
+.estado-texto {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+}
+
+.incidencia-resuelta { background: #0d1d02; border-color: #8fb573; }
+.incidencia-resuelta .estado-texto { color: #e7e7e7; }
+
+.incidencia-pendiente { background: #3b2220; border-color: #d9776a; }
+.incidencia-pendiente .estado-texto { color: #e8837a; }

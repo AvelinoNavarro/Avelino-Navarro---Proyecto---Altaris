@@ -1,3 +1,5 @@
+import './styles/NavBtn.css'
+
 interface NavBtnProps {
   titulo: string
   activo: boolean

@@ -1,3 +1,4 @@
+import './styles/EmployeeCard.css'
 interface EmployeeCardProps {
   nombre: string
   correo: string
@@ -8,8 +9,8 @@ function EmployeeCard({ nombre, correo, ciudad }: EmployeeCardProps) {
   return (
     <article className="tarjeta">
       <h3>{nombre}</h3>
-      <p>✉️ {correo}</p>
-      <p>📍 {ciudad}</p>
+      <p>{correo}</p>
+      <p>{ciudad}</p>
     </article>
   )
 }

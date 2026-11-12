@@ -1,0 +1,11 @@
+.tarjeta {
+  padding: 1rem;
+  background: var(--panel);
+  border: 0.0625rem solid var(--borde);
+  border-radius: 0.625rem;
+  transition: all 0.2s;
+}
+
+.tarjeta:hover { border-color: var(--acento); transform: translateY(-0.1875rem); }
+.tarjeta h3 { margin: 0 0 0.625rem; color: var(--acento2); }
+.tarjeta p { margin: 0.25rem 0; font-size: 0.875rem; }
